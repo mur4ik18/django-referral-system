@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import ReferralRelationship, ReferralCode
 
-# Register your models here.
+admin.site.register(ReferralRelationship)
+admin.site.register(ReferralCode)
