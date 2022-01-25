@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "djang-referral-system"
+version = "0.1.0"
+description = ""
+authors = ["mur4ik18 <o.o.kotov1999@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.0.1"
+djangorestframework = "^3.13.1"
+djoser = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
