@@ -35,52 +35,55 @@
 
 ## :dart: About ##
 
-Describe your project
+I created django referral system and I wanna show it for other people! If you wanna contrib you are welcome! 
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: New user can signUp only with referral code;\
+:heavy_check_mark: Each new user get 3 referral codes for friends;\
+:heavy_check_mark: Each new admin get 5 referral codes;
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- [Djano Rest Framework](https://www.django-rest-framework.org/)
+- [Djoser](https://djoser.readthedocs.io/en/latest/)
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python](https://www.python.org/) installed.
+In the project I used postgresql, you need to start postgresql so you need [Docker-compose](https://docs.docker.com/compose/).
 
 ## :checkered_flag: Starting ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/djang-referral-system
+$ git clone https://github.com/mur4ik18/django-referral-system
 
 # Access
-$ cd djang-referral-system
+$ cd django-referral-system
 
 # Install dependencies
-$ yarn
+$ poetry install
 
-# Run the project
-$ yarn start
+# Run env
+$ poetry shell
 
-# The server will initialize in the <http://localhost:3000>
+# Run postgresql (If you don't have)
+$ docker-compose -f db.yml up --build -d
+
+# Run server
+$ cd src
+
+# Start project
+$ python manage.py runserver
 ```
 
 ## :memo: License ##
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
-
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/mur4ik18" target="_blank">mur4ik18</a>
 
 &#xa0;
 
