@@ -105,7 +105,13 @@ It return:
     {
         "token": "w3iP8GJt1woqLRM6MNrNx88JxuI",
         "user": 1,
-        "refer_relations": []
+        "refer_relations": [
+	   {
+	    "employer": 1,
+	    "employee": 10,
+	    "refer_token": 1
+            }
+	]
     },
     {
         "token": "E6VQuA4qFucR028UW0XL6FAW8vw",
