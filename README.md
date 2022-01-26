@@ -76,6 +76,52 @@ $ docker-compose -f db.yml up --build -d
 $ python src/manage.py runserver
 ```
 
+## :checkered_flag: Works with api ##
+###Create account:###
+```
+POST http://127.0.0.1:8000/auth/jwt/create/
+body={
+"username":"admin",
+"password":"admin"
+}
+```
+It return:
+```
+{
+    "refresh": "refresh_token",
+    "access": "access_token"
+}
+```
+###Get tokens list:###
+```
+GET http://127.0.0.1:8000/api/v1/get_tokens/
+Headers={
+"Authorization":"JWT access_token",
+}
+```
+It return:
+```
+[
+    {
+        "token": "w3iP8GJt1woqLRM6MNrNx88JxuI",
+        "user": 1,
+        "refer_relations": []
+    },
+    {
+        "token": "E6VQuA4qFucR028UW0XL6FAW8vw",
+        "user": 1,
+        "refer_relations": []
+    },
+    ...
+]
+```
+###Create new account###
+```
+POST http://127.0.0.1:8000/auth/users/
+body={
+}
+```
+
 ## :memo: License ##
 Made with :heart: by <a href="https://github.com/mur4ik18" target="_blank">mur4ik18</a>
 
