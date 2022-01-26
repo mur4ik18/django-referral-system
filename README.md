@@ -54,17 +54,14 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python](https://www.python.org/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python](https://www.python.org/) + [Poetry](https://python-poetry.org/) installed.
 In the project I used postgresql, you need to start postgresql so you need [Docker-compose](https://docs.docker.com/compose/).
 
 ## :checkered_flag: Starting ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/mur4ik18/django-referral-system
-
-# Access
-$ cd django-referral-system
+$ git clone https://github.com/mur4ik18/django-referral-system && cd django-referral-system
 
 # Install dependencies
 $ poetry install
@@ -75,11 +72,8 @@ $ poetry shell
 # Run postgresql (If you don't have)
 $ docker-compose -f db.yml up --build -d
 
-# Run server
-$ cd src
-
 # Start project
-$ python manage.py runserver
+$ python src/manage.py runserver
 ```
 
 ## :memo: License ##
