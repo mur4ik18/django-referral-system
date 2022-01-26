@@ -77,7 +77,7 @@ $ python src/manage.py runserver
 ```
 
 ## :checkered_flag: Works with api ##
-###Create account:###
+### Create account: ###
 ```
 POST http://127.0.0.1:8000/auth/jwt/create/
 body={
@@ -92,7 +92,7 @@ It return:
     "access": "access_token"
 }
 ```
-###Get tokens list:###
+### Get tokens list: ###
 ```
 GET http://127.0.0.1:8000/api/v1/get_tokens/
 Headers={
@@ -115,10 +115,23 @@ It return:
     ...
 ]
 ```
-###Create new account###
+### Create new account: ###
 ```
 POST http://127.0.0.1:8000/auth/users/
 body={
+"username":"user",
+"password":"password1",
+"email":"user@gmail.com",
+"referral_token":"E6VQuA4qFucR028UW0XL6FAW8vw",
+}
+```
+It return:
+```
+{
+    "referral_token": "E6VQuA4qFucR028UW0XL6FAW8vw",
+    "email": "test@test.com1",
+    "username": "test1sdas",
+    "id": 11
 }
 ```
 
