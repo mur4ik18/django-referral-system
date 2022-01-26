@@ -19,6 +19,7 @@ class ReferralRelationship(models.Model):
     # referral code
     refer_token = models.ForeignKey(
         "ReferralCode",
+        related_name="referral_code",
         verbose_name="referral_code",
         on_delete=models.CASCADE,
     )

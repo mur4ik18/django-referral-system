@@ -11,10 +11,11 @@ class ReferralSerializer(serializers.ModelSerializer):
             "refer_token"]
 
 class RefferCodeSerializer(serializers.ModelSerializer):
-    refer_relations = ReferralSerializer(many=True, default="")
+    referral_code = ReferralSerializer(many=True, default="")
     class Meta:
         model = ReferralCode
         fields = [
             "token", 
             "user", 
-            "refer_relations"]
+            "referral_code"]
+        
