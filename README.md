@@ -6,7 +6,7 @@
   <!-- <a href="https://djangreferralsystem.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Djang Referral System</h1>
+<h1 align="center">Django Referral System</h1>
 
 <p align="center">
   <img alt="Github language" src="https://img.shields.io/github/languages/top/mur4ik18/django-referral-system?color=success">
